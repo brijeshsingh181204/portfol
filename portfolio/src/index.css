@@ -1,0 +1,8 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg,#000000,#242223,#000000); /* Dark background for the whole app */
+  color: #ffffff; /* White text color */
+  box-sizing: border-box;
+}

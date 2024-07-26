@@ -1,0 +1,114 @@
+/* Work.css */
+
+.mywork-container {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add this to your CSS file */
+
+.work-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #76e4f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: hue-rotate 3s infinite linear;
+  position: relative;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+@keyframes hue-rotate {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}
+
+
+
+
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 60px;
+  border: 2px solid #0072ff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff, 0 0 30px #0072ff, 0 0 40px #0072ff;
+  
+  width: 450px; /* Adjusted width */
+  height: 300px; /* Adjusted height */
+}
+
+
+.bottom-image,
+.top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: clip-path 0.3s ease;
+}
+
+.slider-container {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.slider {
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  background: #0072ff;
+  outline: none;
+  height: 0px;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 0px;
+  height: 300px;
+  background: #00c6ff;
+  border-radius: 50%;
+  border: 0px solid #0072ff;
+  box-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: #0072ff;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px #00c6ff;
+}
+
+.before {
+  left: 10px;
+}
+
+.after {
+  right: 10px;
+}

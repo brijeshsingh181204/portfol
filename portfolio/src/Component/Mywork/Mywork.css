@@ -1,0 +1,74 @@
+/* Mywork.css */
+
+.portfolio {
+  background-color: #121212;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-title {
+  font-size: 3em;
+  margin-bottom: 50px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.portfolio-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7), 0 0 30px #00d2ff;
+}
+
+.portfolio-image {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.1);
+}
+
+.portfolio-item-title {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+.portfolio-item-description {
+  font-size: 1em;
+  padding: 0 20px 20px;
+  color: #bbb;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff, 0 0 30px #0072ff, 0 0 40px #0072ff, 0 0 50px #0072ff, 0 0 60px #0072ff, 0 0 70px #0072ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00c6ff, 0 0 30px #00c6ff, 0 0 40px #0072ff, 0 0 50px #0072ff, 0 0 60px #0072ff, 0 0 70px #0072ff, 0 0 80px #0072ff;
+  }
+}

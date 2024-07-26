@@ -1,0 +1,110 @@
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    font-weight: 500;
+    background: linear-gradient(45deg,#000000,#252424,#000000);
+    margin-top: 0px;
+    animation: fadeIn 2s ease-in;
+  }
+
+
+.about-me-image {
+  border: 2px solid #0072ff;
+  width: 351px; 
+  height: 512px;
+  border-radius: 25px ; 
+  margin-bottom: 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: zoomIn 1s ease-out;
+}
+
+
+
+
+
+
+
+
+.about-me-image:hover{
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7), 0 0 40px #00d2ff;
+}
+
+.about-me-content {
+  text-align: center;
+}
+
+.about-me-title {
+  font-size: 60px;
+  text-align: center;
+  background: linear-gradient(180deg, #0033ff, #00d4ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slideInDown 1s ease-out;
+  margin-bottom: 10px;
+  animation: slideInDown 1s ease-out;
+}
+
+.about-me-text {
+  font-size: 1.2em;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #0033ff, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideInDown 1s ease-out;
+  margin: 0 auto;
+  max-width: 600px;
+  animation: slideInUp 1s ease-out;
+}
+
+.about-me-skills {
+  margin-top: 30px;
+}
+
+.skills-title {
+  font-size: 2em;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #0033ff, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideInDown 1s ease-out;
+  margin-bottom: 10px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-item {
+  font-size: 1.5em;
+  background: linear-gradient(0deg, #0033ff, #00d4ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideInRight 1s ease-out;
+}
+
+
+
+.skill-bar {
+  width: 80%;
+  height: 10px;
+  background: #525151;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(45deg, #0033ff, #00d4ff);
+  border-radius: 5px;
+  animation: growSkill 2s ease-out;
+}
